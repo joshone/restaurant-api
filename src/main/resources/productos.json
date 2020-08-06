@@ -1,0 +1,74 @@
+{
+	"productos": [
+		{
+			"id": 1,
+			"nombre": "coca-cola",
+			"descripcion": "bebida coca-cola",
+			"tipo": "bebida",
+			"precio": 500
+		},
+		{
+			"id": 2,
+			"nombre": "fanta",
+			"descripcion": "bebida fanta",
+			"tipo": "bebida",
+			"precio": 500
+		},
+		{
+			"id": 3,
+			"nombre": "agua",
+			"descripcion": "bebida fanta",
+			"tipo": "bebida",
+			"precio": 100
+		},
+		{
+			"id": 4,
+			"nombre": "men� 1",
+			"descripcion": "almuerzo para 1 personas",
+			"tipo": "almuerzo",
+			"precio": 5000
+		},
+		{
+			"id": 5,
+			"nombre": "men� 2",
+			"descripcion": "almuerzo para 2 personas",
+			"tipo": "almuerzo",
+			"precio": 9500
+		},
+		{
+			"id": 6,
+			"nombre": "men� 3",
+			"descripcion": "almuerzo para 3 personas",
+			"tipo": "almuerzo",
+			"precio": 13500
+		},
+		{
+			"id": 7,
+			"nombre": "men� 4",
+			"descripcion": "almuerzo para 5 personas",
+			"tipo": "almuerzo",
+			"precio": 2200
+		},
+		{
+			"id": 8,
+			"nombre": "torta 3 leches",
+			"descripcion": "postre torta 3 leches",
+			"tipo": "postre",
+			"precio": 2000
+		},
+		{
+			"id": 9,
+			"nombre": "pie de lim�n",
+			"descripcion": "postre pie de lim�n",
+			"tipo": "postre",
+			"precio": 2500
+		},
+		{
+			"id": 10,
+			"nombre": "donuts",
+			"descripcion": "postre donuts",
+			"tipo": "postre",
+			"precio": 1500
+		}
+	]
+}
