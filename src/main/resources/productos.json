@@ -23,28 +23,28 @@
 		},
 		{
 			"id": 4,
-			"nombre": "men� 1",
+			"nombre": "menú 1",
 			"descripcion": "almuerzo para 1 personas",
 			"tipo": "almuerzo",
 			"precio": 5000
 		},
 		{
 			"id": 5,
-			"nombre": "men� 2",
+			"nombre": "menú 2",
 			"descripcion": "almuerzo para 2 personas",
 			"tipo": "almuerzo",
 			"precio": 9500
 		},
 		{
 			"id": 6,
-			"nombre": "men� 3",
+			"nombre": "menú 3",
 			"descripcion": "almuerzo para 3 personas",
 			"tipo": "almuerzo",
 			"precio": 13500
 		},
 		{
 			"id": 7,
-			"nombre": "men� 4",
+			"nombre": "menú 4",
 			"descripcion": "almuerzo para 5 personas",
 			"tipo": "almuerzo",
 			"precio": 2200

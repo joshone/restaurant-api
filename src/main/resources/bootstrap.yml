@@ -1,0 +1,5 @@
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /v1/api/api-docs
