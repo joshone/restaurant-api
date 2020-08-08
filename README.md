@@ -68,3 +68,16 @@ src/main/resources/application.yml
 
 4. respuesta de la venta
 <img src="./images/venta-2.PNG" style="width: 50%" alt="venta-2" />
+
+
+### endpoints: 
+no se añadió contexto para la aplicación, los endpoints estan descritos en el swagger y se agrega archivo postman
+
+- post [login](http://localhost:8080/v1/login)
+- get [productos](http://localhost:8080/v1/producto/all)
+- post [venta](http://localhost:8080/v1/producto/venta)
+- post [ventasDelDia](http://localhost:8080/v1/producto/ventasDelDia)
+
+### archivo postman
+
+<a id="raw-url" href="./restaurant-api.postman_collection.json"> Descargar archivo postman</a>

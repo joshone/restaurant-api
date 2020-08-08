@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "dfb3c3ec-5a52-4fab-84c9-09896b2a7cdb",
+		"name": "restaurant-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/v1/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"jose\",\n\t\"password\": \"alejandro\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/v1/producto/venta",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "alejandro",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "jose",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"tipoPago\": 0,\n\t\"productosComprados\": [{\n\t\t\"idProducto\": 1,\n\t\t\"valorUnidad\": 3500.0,\n\t\t\"cantidad\": 3\n\t}]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/producto/venta",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"producto",
+						"venta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/v1/producto/ventasDelDia",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "alejandro",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "jose",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/producto/ventasDelDia",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"producto",
+						"ventasDelDia"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/v1/producto/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/producto/all",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"producto",
+						"all"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
