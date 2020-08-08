@@ -1,11 +1,46 @@
-# restaurant-api
-restaurant-api for technical test
+# restaurant-api for technical test
+
+Este repo es para subir el test técnico para evaluación
+
+## Pre-requisitos: 
+
+1. java 8
+2. [Apache Maven](https://maven.apache.org/)
+2. [Apache ActiveMQ](http://activemq.apache.org/)
+
+## Pasos de utilización de ActiveMQ para manejo de JMS
+
+1. Descargar [Apache ActiveMQ](http://activemq.apache.org/)
+2. Descomprimir archivo y ejecutarlo: 
+
+	- si es windows activemq.exe start
+	- si es linux/mac (revisar permisos de ejecución) ./activemq start
+	
+3. [Manager de ActiveMQ](http://localhost:8161/)  y usar admin/admin por defecto
 
 
-credenciales 
+## Pasos para ejecutar la aplicación
+- Clonar el proyecto:
+```
+git clone https://github.com/joshone/restaurant-api.git
+```
+- Compilar el proyecto:
+```
+mvn clean package
+```
+- Ejecutar el proyecto:
+	opcion 1: 
+```
+mvn spring-boot:run
+```
+	opcion 2:
+```
+java -jar target/restaurant-api.jar
+```
 
-jose:alejandro
-roberto:cortes
-fernando:cortes
-carmen:magallanes
-jorge:salinas
+##credenciales ejemplo
+	1. jose:alejandro
+	2. roberto:cortes
+	3. fernando:cortes
+	4. carmen:magallanes
+	5. jorge:salinas
