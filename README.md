@@ -39,6 +39,10 @@ java -jar target/restaurant-api.jar
 ```
 
 ### credenciales ejemplo
+estas credenciales se encuentran en el archivo application.yml en la siguiente ruta
+```
+src/main/resources/application.yml
+```
 
 	1. jose:alejandro
 	2. roberto:cortes
