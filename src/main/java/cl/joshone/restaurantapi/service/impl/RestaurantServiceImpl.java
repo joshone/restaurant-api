@@ -77,6 +77,7 @@ public class RestaurantServiceImpl implements RestaurantService {
 			jmsTemplate.convertAndSend(queue, gson.toJson(ventaResponse));
 
 		} catch (Exception e) {
+			//si no está conectado al activemq, lo almacenamos en una lista temporal para ser procesado en la clase schedule
 			Simulaciones.listaVentasNoEncoladas.add(ventaResponse);
 			logger.error("cola no disponible...{}", e.getMessage());
 		}

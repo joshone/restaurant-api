@@ -26,6 +26,10 @@ public class VentasScheduled {
 	@Autowired
 	private JmsTemplate jmsTemplate;
 	
+	/*
+	 * este schedule revisa la lista de ventas que no se pudieron encolar periodicamente, hasta que se conecte al activemq 
+	 * y encolarlo
+	 * */
 	@Scheduled(fixedRate = 15000)
 	public void encolarLista() {
 		if(!Simulaciones.listaVentasNoEncoladas.isEmpty()) {

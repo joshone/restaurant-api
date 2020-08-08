@@ -41,6 +41,9 @@ public class VentaController {
 	@Autowired
 	private RestaurantService restaurantService;
 
+	/*
+	 * endpoint para listar productos
+	 * */
 	@ApiOperation(value = "get", notes = "lista productos en venta")
 	@ApiResponses(value = { @ApiResponse(code = 400, message = "Bad Request"),
 			@ApiResponse(code = 404, message = "Not Found"),
@@ -64,6 +67,9 @@ public class VentaController {
 		return new ResponseEntity<>(productos.getProductos(), HttpStatus.OK);
 	}
 
+	/*
+	 * endpoint para realizar la venta
+	 * */
 	@ApiOperation(value = "post", notes = "realiza venta")
 	@ApiResponses(value = { @ApiResponse(code = 400, message = "Bad Request"),
 			@ApiResponse(code = 404, message = "Not Found"), 
@@ -77,6 +83,9 @@ public class VentaController {
 		return new ResponseEntity<>(restaurantService.crearVenta(token, venta), HttpStatus.OK);
 	}
 	
+	/*
+	 * endpoint para ver las ventas del dia, revisar README.md
+	 * */
 	@ApiOperation(value = "post", notes = "realiza venta")
 	@ApiResponses(value = { @ApiResponse(code = 400, message = "Bad Request"),
 			@ApiResponse(code = 404, message = "Not Found"), 

@@ -27,7 +27,9 @@ public class LoginController {
 	@Autowired
 	private RestaurantService restaurantService;
 	
-	
+	/*
+	 * endpoint para autenticarse
+	 * */
 	@ApiOperation(value = "post", notes = "login para obtener acceso a la applicación")
 	@ApiResponses(value = { @ApiResponse(code = 400, message = "Bad Request"),
 			@ApiResponse(code = 404, message = "Not Found"),

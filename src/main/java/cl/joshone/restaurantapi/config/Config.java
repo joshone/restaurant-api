@@ -12,6 +12,9 @@ import org.springframework.jms.core.JmsTemplate;
 @Configuration
 public class Config {
 
+	/*
+	 * configuracion de activemq
+	 * */
 	@Value("${spring.activemq.broker-url}")
 	private String brokerURL;
 

@@ -15,6 +15,9 @@ import cl.joshone.restaurantapi.model.productos.to.Venta_;
 public class GenericUtils {
 	private static Logger logger = LoggerFactory.getLogger(GenericUtils.class);
 
+	/*
+	 * metodo para encodear las credenciales a basic
+	 * */
 	public static String encode(Credential credential) {
 		
 		String auth = credential.getUsername().concat(":").concat(credential.getPassword());
@@ -23,6 +26,9 @@ public class GenericUtils {
 		return new String(encodedAuth);
 	}
 
+	/*
+	 * metodo para decodear el token  
+	 * */
 	public static Credential decode(String token) {
 		String temp = token.split(" ")[1];
 		String basicFormat = new String (Base64.getDecoder().decode(temp));
@@ -31,6 +37,9 @@ public class GenericUtils {
 		return new Credential(cred[0], cred[1]);
 	}
 	
+	/**
+	 * metodo para almacenar las ventas como parte de un functional interface 
+	 **/
 	public static Venta_ saveVenta_(Venta venta) {
 		long nextId = Simulaciones.listaVentas.stream().count();
 		
@@ -44,6 +53,9 @@ public class GenericUtils {
 		return v;
 	}
 	
+	/*
+	 * metodo para validar si el token se encuentra en la lista, simula autenticación con alguna fuente de datos
+	 * **/
 	public static boolean isValid(List<String> tokensList, String token) {
 		String t = token.split(" ")[1];
 		
