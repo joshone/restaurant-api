@@ -5,8 +5,8 @@ Este repo es para subir el test técnico para evaluación
 ## Pre-requisitos: 
 
 1. java 8
-2. [Apache Maven](https://maven.apache.org/)
-2. [Apache ActiveMQ](http://activemq.apache.org/)
+2. [Apache Maven](https://maven.apache.org/)  
+2. [Apache ActiveMQ](http://activemq.apache.org/) (en el application.yml hay un flag para activar o desactivar activemq para el jms)
 
 ## Pasos de utilización de ActiveMQ para manejo de JMS
 
