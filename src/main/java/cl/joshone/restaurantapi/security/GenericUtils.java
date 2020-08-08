@@ -3,7 +3,7 @@ package cl.joshone.restaurantapi.security;
 import java.nio.charset.StandardCharsets;
 import java.time.LocalDateTime;
 import java.util.Base64;
-
+import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -42,6 +42,16 @@ public class GenericUtils {
 		Simulaciones.listaVentas.add(v);
 		logger.info("transaccion guardada - id...{}", v.getId());
 		return v;
+	}
+	
+	public static boolean isValid(List<String> tokensList, String token) {
+		String t = token.split(" ")[1];
+		
+		return tokensList.stream()
+				.filter(r -> r.equals(t))
+				//.peek(System.out::println)
+				.findFirst()
+				.isPresent(); 
 	}
 
 }
