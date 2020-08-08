@@ -10,7 +10,7 @@ public class Venta {
 	public Venta() {
 	}
 	
-	public Venta(long id, long montoTotal, int tipoPago,
+	public Venta(int tipoPago,
 			List<ProductoComprado> productosComprados) {
 		this.tipoPago = tipoPago;
 		this.productosComprados = productosComprados;
