@@ -29,12 +29,12 @@ git clone https://github.com/joshone/restaurant-api.git
 mvn clean package
 ```
 - Ejecutar el proyecto:
-	- opcion 1: 
 ```
+- opcion 1.: 
 mvn spring-boot:run
 ```
-	- opcion 2:
 ```
+- opcion 2.:
 java -jar target/restaurant-api.jar
 ```
 
