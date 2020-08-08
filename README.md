@@ -39,6 +39,7 @@ java -jar target/restaurant-api.jar
 ```
 
 ##credenciales ejemplo
+
 	1. jose:alejandro
 	2. roberto:cortes
 	3. fernando:cortes
