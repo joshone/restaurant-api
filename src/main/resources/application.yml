@@ -1,11 +1,15 @@
+#tokens para simular autenticacion
 custom:
   basic: 
     list: am9zZTphbGVqYW5kcm8=,cm9iZXJ0bzpjb3J0ZXM=,cGVkcm86cmFtaXJleg==,Y2FybWVuOm1hZ2FsbGFuZXM=,am9yZ2U6c2FsaW5hcw==,ZmVybmFuZG86Y29ydGVz
-    
+#configuracion basica de jms activemq
 spring:
   activemq:
     broker-url: tcp://localhost:61616
     in-memory: false
     pool:
       enabled: false
+#desactivar si se quiere usar sin cola de jms
+usar: 
+  activemq: true
  

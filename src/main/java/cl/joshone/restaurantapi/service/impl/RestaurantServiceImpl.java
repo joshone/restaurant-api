@@ -34,6 +34,9 @@ public class RestaurantServiceImpl implements RestaurantService {
 
 	@Value("${custom.basic.list}")
 	private List<String> basicList;
+	
+	@Value("${usar.activemq}")
+	private boolean usarActiveMQ;
 
 	@Autowired
 	JmsTemplate jmsTemplate;
@@ -69,6 +72,7 @@ public class RestaurantServiceImpl implements RestaurantService {
 
 		VentaResponse ventaResponse = new VentaResponse(v.getId(), v.getMonto(), v.getTimestampOperacion(), "venta ok");
 		try {
+			//almacena el mensaje en activemq
 			logger.info("enviando > {}", ventaResponse);
 			jmsTemplate.convertAndSend(queue, gson.toJson(ventaResponse));
 
@@ -87,6 +91,16 @@ public class RestaurantServiceImpl implements RestaurantService {
 		}
 		LocalDate today = LocalDate.now();
 		Predicate<VentaResponse> p = (v) -> v.getTimeStampOperacion().toLocalDate().equals(today);
-		return Simulaciones.listaVentasDesencoladas.stream().filter(p).collect(Collectors.toList());
+		//si se desea usar activemq y obtener la lista de productos
+		if(usarActiveMQ) 
+			return Simulaciones.listaVentasDesencoladas.stream().filter(p).collect(Collectors.toList());
+		else {
+			//retorna la lista de ventas simuladas en base de datos convertidas al tipo de salida
+			return Simulaciones.listaVentas
+					.stream()
+					.map(venta -> new VentaResponse(venta.getId(), venta.getMonto(), venta.getTimestampOperacion(), "venta ok"))
+					.collect(Collectors.toList());
+		}
+			
 	}
 }
