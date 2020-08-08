@@ -30,11 +30,11 @@ mvn clean package
 ```
 - Ejecutar el proyecto:
 ```
-- opcion 1.: 
+- opción 1: 
 mvn spring-boot:run
 ```
 ```
-- opcion 2.:
+- opción 2:
 java -jar target/restaurant-api.jar
 ```
 
