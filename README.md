@@ -58,13 +58,13 @@ src/main/resources/application.yml
 ### ejemplo de uso:
 
 1. login con user y password
-<img src="/images/login-1.png" style="width: 50%" alt="login-1" />
+<img src="./images/login-1.png" style="width: 50%" alt="login-1" />
 
 2. responde de la siguiente manera
-<img src="/images/login-2.png" style="width: 50%" alt="login-2" />
+<img src="./images/login-2.png" style="width: 50%" alt="login-2" />
 
 3. con el token realizamos la venta 
-<img src="/images/venta-1.png" style="width: 50%" alt="venta-1" />
+<img src="./images/venta-1.png" style="width: 50%" alt="venta-1" />
 
 4. respuesta de la venta
-<img src="/images/venta-2.png" style="width: 50%" alt="venta-2" />
+<img src="./images/venta-2.png" style="width: 50%" alt="venta-2" />
