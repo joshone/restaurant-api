@@ -47,9 +47,13 @@ public class GenericUtils {
 	public static boolean isValid(List<String> tokensList, String token) {
 		String t = token.split(" ")[1];
 		
-		return tokensList.stream()
-				.filter(r -> r.equals(t))
-				//.peek(System.out::println)
+		
+  		return tokensList.stream()
+				.filter(r -> {
+					boolean f = r.equals(t);
+					return f;
+				})
+				.peek(f -> logger.info(f))
 				.findFirst()
 				.isPresent(); 
 	}
