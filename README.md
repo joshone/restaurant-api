@@ -28,7 +28,7 @@ git clone https://github.com/joshone/restaurant-api.git
 ```
 mvn clean package
 ```
-- Ejecutar el proyecto:
+- Ejecutar el proyecto localmente:
 ```
 - opción 1: 
 mvn spring-boot:run
@@ -37,6 +37,11 @@ mvn spring-boot:run
 - opción 2:
 java -jar target/restaurant-api.jar
 ```
+- Por defecto la aplicación carga en el puerto 8080, para ver el swagger debe acceder a la siguiente url
+```
+[Swagger](http://localhost:8080/swagger-ui.html)
+```
+
 
 ### credenciales ejemplo
 estas credenciales se encuentran en el archivo application.yml en la siguiente ruta
