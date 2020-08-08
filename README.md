@@ -20,20 +20,20 @@ Este repo es para subir el test técnico para evaluación
 
 
 ## Pasos para ejecutar la aplicación
-- Clonar el proyecto:
+	- Clonar el proyecto:
 ```
 git clone https://github.com/joshone/restaurant-api.git
 ```
-- Compilar el proyecto:
+	- Compilar el proyecto:
 ```
 mvn clean package
 ```
 - Ejecutar el proyecto:
-	opcion 1: 
+	- opcion 1: 
 ```
 mvn spring-boot:run
 ```
-	opcion 2:
+	- opcion 2:
 ```
 java -jar target/restaurant-api.jar
 ```
