@@ -2,7 +2,7 @@ package cl.joshone.restaurantapi.model.productos;
 
 import java.time.LocalDateTime;
 
-public class VentaResponse {
+public class VentaResponse{
 	
 	private long idVenta;
 	private double monto;
@@ -40,5 +40,11 @@ public class VentaResponse {
 	}
 	public void setMensaje(String mensaje) {
 		this.mensaje = mensaje;
-	}	
+	}
+	
+	@Override
+	public String toString() {
+		return "VentaResponse [idVenta=" + idVenta + ", monto=" + monto + ", timeStampOperacion=" + timeStampOperacion
+				+ ", mensaje=" + mensaje + "]";
+	}
 }

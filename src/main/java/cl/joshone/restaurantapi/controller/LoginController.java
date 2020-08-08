@@ -21,7 +21,7 @@ import io.swagger.annotations.ApiResponses;
 
 @Api(value = "login")
 @RestController
-@RequestMapping( EndPoint.VERSION_1 + "/" )
+@RequestMapping( EndPoint.VERSION_1 )
 public class LoginController {
 	
 	@Autowired

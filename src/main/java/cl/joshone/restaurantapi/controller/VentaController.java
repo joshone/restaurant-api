@@ -76,5 +76,16 @@ public class VentaController {
 
 		return new ResponseEntity<>(restaurantService.crearVenta(venta), HttpStatus.OK);
 	}
+	
+	@ApiOperation(value = "post", notes = "realiza venta")
+	@ApiResponses(value = { @ApiResponse(code = 400, message = "Bad Request"),
+			@ApiResponse(code = 404, message = "Not Found"), 
+			@ApiResponse(code = 406, message = "Not Acceptable"),
+			@ApiResponse(code = 500, message = "Internal Server Error") })
+	@GetMapping(value = "/ventasDelDia", produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<List<VentaResponse>> ventasDelDia() {
+
+		return new ResponseEntity<>(restaurantService.listadoVentasDia(), HttpStatus.OK);
+	}
 
 }

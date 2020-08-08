@@ -1,5 +1,7 @@
 package cl.joshone.restaurantapi.service;
 
+import java.util.List;
+
 import cl.joshone.restaurantapi.model.login.Credential;
 import cl.joshone.restaurantapi.model.login.User;
 import cl.joshone.restaurantapi.model.productos.Venta;
@@ -9,7 +11,7 @@ public interface RestaurantService {
 	
 	public User login(Credential credential);
 	public VentaResponse crearVenta(Venta venta);
-	public void listadoVentasDia();
+	public List<VentaResponse> listadoVentasDia();
 	
 
 }
